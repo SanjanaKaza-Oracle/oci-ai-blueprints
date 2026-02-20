@@ -45,3 +45,27 @@ After deployment you get:
 
 - **OCI AI Blueprints Portal**: The stack exposes the Blueprints portal URL.
 - **VSS UI**: A web UI for VSS where you can select videos from object storage, run summarization, ask questions (Q&A), view alerts, and adjust parameters.
+
+> **Note:** The VSS UI is not ready immediately after the stack succeeds. It takes approximately 25 more minutes for the pipeline to be loaded and ready. 
+
+You can verify that the VSS pod is ready by logging into the Blueprints portal and checking the VSS pod's deployment logs under Deployments -> Deployment Group -> vss-deployment-group.. -> View Logs & Details.
+
+When the pod is ready and the backend is accessible, you should see logs similar to:
+```
+INFO:     172.16.2.1:52520 - "GET /health/ready HTTP/1.1" 200 OK
+INFO:     172.16.2.1:52534 - "GET /health/ready HTTP/1.1" 200 OK
+INFO:     172.16.2.1:57784 - "GET /health/live HTTP/1.1" 200 OK
+ ```
+
+### Prerequisites
+
+Before using the VSS UI, ensure that:
+
+- **Object Storage Bucket**: A bucket named `vss-test` is created in the deployed compartment in the deployed region.
+
+### Using the VSS UI
+
+1. Upload the video files to the `vss-test` bucket in object storage.
+2. Refresh the VSS UI page after adding new files to see them appear in the interface.
+3. Once the pipeline is ready (as indicated by the health check logs), you can select the videos and analyze them.
+4. If you want to change the bucket name or customize parameters, they can be changed under Settings.
