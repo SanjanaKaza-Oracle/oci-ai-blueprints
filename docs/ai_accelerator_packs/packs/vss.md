@@ -44,7 +44,7 @@ You can deploy the VSS Starter Pack from the **OCI Console**. Under **AI Acceler
 After deployment you get:
 
 - **OCI AI Blueprints Portal**: The stack exposes the Blueprints portal URL.
-- **VSS UI**: A web UI for VSS where you can select videos from object storage, run summarization, ask questions (Q&A), view alerts, and adjust parameters.
+- **VSS UI**: A web UI for VSS where you can select videos from object storage and analyze them to receive timestamp specific content moderation results, including categories and descriptions that can be reviewed and edited.
 
 > **Note:** The VSS UI is not ready immediately after the stack succeeds. It takes approximately 25 more minutes for the pipeline to be loaded and ready. 
 
