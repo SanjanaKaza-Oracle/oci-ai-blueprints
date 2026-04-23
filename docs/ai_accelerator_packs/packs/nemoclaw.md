@@ -32,7 +32,7 @@ OpenShell enforces security at the proxy level, all network traffic from the san
 
 ## Deployment and Access
 
-You can deploy the NemoClaw Starter Pack from the **OCI Console**. Under **AI Accelerator Packs**, select NemoClaw, choose your inference provider and security tier, add the portal credentials, and click Create.
+Please contact us if you want to try this pack out.
 
 After deployment you get:
 
