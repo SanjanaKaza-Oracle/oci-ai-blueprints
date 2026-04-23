@@ -1,4 +1,4 @@
-# NemoClaw Autonomous Agent Sandbox
+# NemoClaw Accelerator Pack
 
 > **Experimental** — This pack is still in experiment mode and not meant for production use cases.
 
